@@ -66,7 +66,7 @@
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-mpc5554.git
 [submodule "otawa-arm"]
 	path = archs/otawa-arm
-	url = https://git.renater.fr/anonscm/git/otawa/otawa-arm.git
+	url = https://github.com/statinf-otawa/otawa-arm.git
 [submodule "gel"]
 	path = gel
 	url = https://git.renater.fr/anonscm/git/otawa/gel.git

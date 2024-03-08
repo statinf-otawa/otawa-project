@@ -44,16 +44,12 @@ cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
 make install
 cd ..
 cd gelpp ; mkdir build ; cd build
-git checkout aarch64
-git switch aarch64
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
 cd ../..
 # Now build OTAWA
 cd otawa ; mkdir build ; cd build
-git checkout aarch64
-git switch aarch64
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
 cd ../..
 
@@ -61,8 +57,6 @@ cd ../..
 cd archs
 # Build GLISS2 first: GLISS2 is the software that lets us generate ISA from NMP projects
 cd gliss2
-git checkout aarch64
-git switch aarch64
 make; cd ..
 # Now, build the architectures (you can skip those you are not interested in)
 # This will transform each NMP project into a C library
@@ -102,17 +96,15 @@ make install
 cd ..
 
 # Add dcache library
-cd otawa-clp 
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+cd otawa-clp ; mkdir build ; cd build
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
-cd ../otawa-dcache
-git checkout xilinx
-git switch xilinx
-cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
+cd ../../otawa-dcache ; mkdir build ; cd build
+cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR ..
 make install
 
 # Add xilinx board support
-cd ../archs/otawa-xilinx
+cd ../../archs/otawa-xilinx
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR .
 make install
 
