@@ -47,7 +47,7 @@ RUN cd ./archs/gliss2    && make
 RUN cd ./archs/armv5t;  make; cd ..;\
     cd armv7t;  make WITH_FAST_STATE=1;\
     cd ../otawa-arm; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
-RUN cd aarch64-armv8v9 ; make; cd ..;\
+RUN cd ./archs/aarch64-armv8v9 ; make; cd ..;\
     cd otawa-aarch64 ; cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 RUN cd ./archs/ppc;     make WITH_DYNLIB=1;     cd ../otawa-ppc;     cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 RUN cd ./archs/riscv;   make WITH_DYNLIB=1;     cd ../otawa-riscv;   cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
