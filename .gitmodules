@@ -78,16 +78,16 @@
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-lp_solve5.git
 [submodule "archs/aarch64-armv8v9"]
 	path = archs/aarch64-armv8v9
-	url = git@statinf-git:statinf-software/aarch64-armv8v9
+	url = https://github.com/statinf-software/aarch64-armv8v9
 [submodule "archs/otawa-aarch64"]
 	path = archs/otawa-aarch64
-	url = git@statinf-git:statinf-software/otawa-aarch64
+	url = https://github.com/statinf-software/otawa-aarch64
 [submodule "otawa-clp"]
 	path = otawa-clp
 	url = https://git.renater.fr/anonscm/git/otawa/otawa-clp.git
 [submodule "otawa-dcache"]
 	path = otawa-dcache
-	url = git@statinf-git:statinf-otawa/otawa-dcache.git
+	url = https://github.com/statinf-otawa/otawa-dcache.git
 [submodule "archs/otawa-xilinx"]
 	path = archs/otawa-xilinx
-	url = git@statinf-git:statinf-otawa/otawa-xilinx.git
+	url = https://github.com/statinf-otawa/otawa-xilinx.git
