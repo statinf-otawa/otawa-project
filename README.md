@@ -74,6 +74,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DI
 cd ..
 cd otawa-aarch64
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
+cd ..
 cd otawa-ppc
 cmake -DCMAKE_INSTALL_PREFIX=$OTAWA_INSTALL_DIR -DOTAWA_CONFIG=$OTAWA_INSTALL_DIR/bin/otawa-config . && make install
 cd ..
