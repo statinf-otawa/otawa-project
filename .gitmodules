@@ -91,3 +91,7 @@
 [submodule "archs/otawa-xilinx"]
 	path = archs/otawa-xilinx
 	url = https://github.com/statinf-otawa/otawa-xilinx.git
+[submodule "archs/otawa-STM32F427"]
+	path = archs/otawa-xilinx
+	url = https://github.com/statinf-otawa/otawa-STM32F427.git
+
