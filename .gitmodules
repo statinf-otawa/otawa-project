@@ -69,7 +69,7 @@
 	url = https://github.com/statinf-otawa/otawa-arm.git
 [submodule "gel"]
 	path = gel
-	url = https://git.renater.fr/anonscm/git/otawa/gel.git
+	url = https://github.com/statinf-otawa/gel
 [submodule "lp_solve5"]
 	path = lp_solve5
 	url = https://git.renater.fr/anonscm/git/otawa/lp_solve5.git
